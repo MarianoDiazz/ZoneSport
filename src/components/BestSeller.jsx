@@ -63,7 +63,7 @@ const BestSeller = () => {
 
     return (
         <div className="product-section">
-            <h2 className='py-2 fs-1'>Productos destacados</h2>
+            <h2 className='py-2 fs-1 tituloDestacados'>Productos destacados</h2>
             <Slider {...settings}>
                 {products.map((product) => (
                     <div key={product.id} className="product-card">

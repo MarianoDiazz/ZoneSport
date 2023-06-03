@@ -10,22 +10,20 @@
 }
 
 /* Estilos para el contenedor del carrusel */
-.product-carousel {
-    width: 100%;
-    margin-top: 20px;
-    position: relative;
-}
+
 
 /* Estilos para cada tarjeta de producto */
 .product-card {
+    margin: 2rem 1rem;
     padding: 10px;
     text-align: center;
+    transition: transform 0.3s ease;
+    /* Agregar transición a la propiedad transform */
 }
 
 .product-card img {
     width: 100%;
-    min-height: 18vw;
-    max-height: 20vw;
+    max-height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
 }
@@ -40,5 +38,18 @@
     color: #888;
 }
 
+.product-card:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: -7px 4px 13px 0px rgba(0, 0, 0, 0.48);
+    -webkit-box-shadow: -7px 4px 13px 0px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: -7px 4px 13px 0px rgba(0, 0, 0, 0.48);
 
+}
 
+.tituloDestacados {
+    color: #14213d;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}

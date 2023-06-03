@@ -1,21 +1,27 @@
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
-import Navigation from './components/Navigation'
-import CarouselHome from './components/CarouselHome';
-import BestSeller from './components/BestSeller';
+import Admin from './components/Admin/Admin';
+import Home from './components/Home';
+import Navigation from './components/Navigation';
+import ProductCreate from './components/Admin/ProductCreate';
 
 function App() {
-
-
   return (
-    <div>
+    <BrowserRouter>
       <Navigation />
-      <CarouselHome />
+      <div>
+        <main>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/Admin" element={<Admin />} />
+            <Route exact path="/Admin/create" element={<ProductCreate />} />
 
-      <main>
-        <BestSeller />
-      </main>
-    </div>
-  )
+          </Routes>
+        </main>
+      </div>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
