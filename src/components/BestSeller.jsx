@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const BestSeller = () => {
     const settings = {
-        dots: false,
+        dots: true,
         infinite: false,
         speed: 500,
         slidesToShow: 3,
@@ -32,7 +32,7 @@ const BestSeller = () => {
             id: 1,
             name: 'Nike Pro1',
             price: '$49.99',
-            image: 'https://images.pexels.com/photos/1456706/pexels-photo-1456706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+            image: 'https://nikearprod.vtexassets.com/arquivos/ids/530053-1200-1200?v=638161359421770000&width=1200&height=1200&aspect=true',
         },
         {
             id: 2,
@@ -63,7 +63,7 @@ const BestSeller = () => {
 
     return (
         <div className="product-section">
-            <h2 className='py-2 fs-1 tituloDestacados'>Productos destacados</h2>
+            <h1 >Productos destacados</h1>
             <Slider {...settings}>
                 {products.map((product) => (
                     <div key={product.id} className="product-card">
