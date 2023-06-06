@@ -9,6 +9,24 @@
     object-fit: cover;
 }
 
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.carousel-description {
+    color: #fff;
+    font-size: 18px;
+}
+
+
 /* Estilos para el contenedor del carrusel */
 .product-carousel {
     width: 100%;
@@ -17,6 +35,22 @@
 }
 
 /* Estilos para cada tarjeta de producto */
+.product-section {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.product-section h1 {
+    font-family: 'Recia', serif;
+    font-size: 3rem;
+    margin: 15px 0 15px 0;
+    text-align: center;
+    font-weight: 600;
+    color: #0b061d;
+}
+
+
+
 .product-card {
     padding: 10px;
     text-align: center;
@@ -25,7 +59,7 @@
 .product-card img {
     width: 100%;
     min-height: 18vw;
-    max-height: 20vw;
+    max-height: 58vw;
     object-fit: cover;
     margin-bottom: 10px;
 }
@@ -40,5 +74,34 @@
     color: #888;
 }
 
+/* FLECHITA DE CAROUSEL */
 
+.slick-slider button::before{
+    border-radius: 5px;
+    /* background-color: #0b061d; */
+    color: #0b061d;
+    font-size: 2.5vh;
+}
 
+/* SLIDER MARCAS */
+.container-marcas h1 {
+    /* font-size: 3rem; */
+    font-family: 'Recia', serif;
+    font-size: 4rem;
+    margin-top: 3rem;
+}
+
+.marcas-slider {
+    /* background-color: #888; */
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+.marcas-icon {
+    width: 95% !important;
+    height: 12vw;
+    margin: 0 10px;
+    border-radius: 50%;
+    filter: drop-shadow(8px 12px 12px #B4E34B);
+}
