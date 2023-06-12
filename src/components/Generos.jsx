@@ -3,8 +3,8 @@ import { Col, Row, Container } from 'react-bootstrap';
 const Generos = () => {
     return (
         <div>
-            <Container className='container-gen'>
-                <Row>
+            <Container className='container-gen mb-5'>
+                <Row className='bg-dark'>
                     <Col sm={12} md={6}>
                         <div className='genero-m'>
                             <h2>Mujer</h2>

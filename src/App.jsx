@@ -5,6 +5,7 @@ import Admin from './components/Admin/Admin';
 import Home from './components/Home';
 import Navigation from './components/Navigation';
 import ProductCreate from './components/Admin/ProductCreate';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           </Routes>
         </main>
       </div>
+        <Footer />
     </BrowserRouter>
   );
 }

@@ -1,3 +1,7 @@
+body {
+    background-color: #F0EFEB;
+}
+
 /* NAVBAR */
 .navbarContainer {
     font-family: 'Oswald', sans-serif;
@@ -88,6 +92,7 @@
     font-family: 'Recia', serif;
     font-size: 4rem;
     margin-top: 3rem;
+    font-weight: 700;
 }
 
 .marcas-slider {
@@ -98,11 +103,11 @@
 }
 
 .marcas-icon {
-    width: 95% !important;
-    height: 12vw;
+    width: 90% !important;
+    height: 10vh;
     margin: 0 10px;
     border-radius: 50%;
-    filter: drop-shadow(8px 12px 12px #B4E34B);
+    filter: drop-shadow(8px 12px 12px #696262);
 }
 
 .marcas-icon:hover {
@@ -111,10 +116,10 @@
 }
 
 /* GENEROS */
-.container-gen {
+/* .container-gen {
     width: 100%;
     height: 250px;
-}
+} */
 
 .genero-h {
     background-image: url(https://cdn.pixabay.com/photo/2021/01/13/16/46/workout-5914643_1280.jpg);
@@ -180,4 +185,89 @@
     font-size: 1.9rem;
     letter-spacing: 2px;
     font-family: 'Supreme', sans-serif;
+}
+
+
+/* FOOTER */
+/* Footer Styles */
+.footer {
+    padding-top: 40px;
+    position: relative;
+    clear: both;
+    margin-top: 50px;
+}
+
+.footer h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    color: #fff;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #dce2da;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+.footer-bottom p {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* Social Icons */
+.social-icons a {
+    color: #fff;
+    font-size: 30px;
+    margin-right: 10px;
+    transition: all 0.3s;
+}
+
+.social-icons a:hover {
+    color: #3b5998;
+    transform: scale(1.1);
+}
+
+/* Facebook Icon */
+.facebook-icon:hover {
+    color: #3b5998;
+}
+
+/* Twitter Icon */
+.twitter-icon:hover {
+    color: #1da1f2;
+}
+
+/* Instagram Icon */
+.instagram-icon:hover {
+    color: #c32aa3;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.footer {
+    animation: fadeIn 1s;
 }
