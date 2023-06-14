@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import Admin from './components/Admin/Admin';
@@ -6,22 +6,50 @@ import Home from './components/Home';
 import Navigation from './components/Navigation';
 import ProductCreate from './components/Admin/ProductCreate';
 import Footer from './components/Footer';
+import ProductDetail from './components/ProductDetail';
+import axios from './config/AxiosApi';
 
 function App() {
+  const [products, setProducts] = useState([])
+
+  //  variable de entorno
+  // por problemas la defini en index.html
+  const URL = window.API_URL;
+  console.log(URL)
+
+
+  useEffect(() => {
+    getApi()
+  }, [])
+  const getApi = async () => {
+    try {
+      const res = await fetch(' http://localhost:3007/products')
+      const productApi = await res.json()
+      setProducts(productApi)
+
+
+      // const res = await axios.get(URL)
+      // const productApi = res?.data
+      // setProducts(productApi)
+
+
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   return (
     <BrowserRouter>
       <Navigation />
       <div>
         <main>
           <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/Admin" element={<Admin />} />
-            <Route exact path="/Admin/create" element={<ProductCreate />} />
-
-          </Routes>
+            <Route exact path="/" element={<Home products={products} />} />
+            <Route path="/Admin" element={<Admin products={products} URL={URL} getApi={getApi} />} />
+            <Route path="/Admin/create" element={<ProductCreate />} />          </Routes>
         </main>
       </div>
-        <Footer />
+      <Footer />
     </BrowserRouter>
   );
 }
