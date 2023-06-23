@@ -37,9 +37,9 @@ const BestSeller = () => {
     },
     {
       id: 2,
-      name: 'Nike Pro1',
+      name: 'Nike Pro3',
       price: '$45.99',
-      image: 'https://nikearprod.vtexassets.com/arquivos/ids/498039-1400-1400?v=1772127920&width=1400&height=1400&aspect=true',
+      image: 'https://nikearprod.vtexassets.com/arquivos/ids/456062-1400-1400?v=1773947332&width=1400&height=1400&aspect=true',
     },
     {
       id: 3,

@@ -59,14 +59,14 @@ const ProductCreate = () => {
           >
             <option value="">Seleccionar categoría</option>
             {/* Opciones de categorías */}
-            <option value="categoria1">Categoría 1</option>
-            <option value="categoria2">Categoría 2</option>
-            <option value="categoria3">Categoría 3</option>
+            <option value="calzado">Calzado</option>
+            <option value="indumentaria">Indumentaria</option>
+            <option value="accesorio">Accesorio</option>
           </Form.Control>
         </Form.Group>
 
-        <Button variant="primary" type="submit">
-          Crear
+        <Button variant="primary" type="submit" className='my-4'>
+          Agregar producto
         </Button>
       </Form>
     </Container>

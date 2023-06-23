@@ -2,21 +2,21 @@
     "products": [
       {
         "id": "1",
-        "name": "Nike Pro1",
+        "name": "Nike Pr",
         "price": "$49.99",
-        "image": "https://nikearprod.vtexassets.com/arquivos/ids/530053-1200-1200?v=638161359421770000&width=1200&height=1200&aspect=true"
+        "image": "https://nikearprod.vtexassets.com/arquivos/ids/531573-1400-1400?v=1773181656&width=1400&height=1400&aspect=true"
       },
       {
         "id": "2",
-        "name": "Nike Pro1",
+        "name": "Musculosa Jordan",
         "price": "$45.99",
-        "image": "https://nikearprod.vtexassets.com/arquivos/ids/498039-1400-1400?v=1772127920&width=1400&height=1400&aspect=true"
+        "image": "https://nikearprod.vtexassets.com/arquivos/ids/657747-1400-1400?v=1773156102&width=1400&height=1400&aspect=true"
       },
       {
         "id": "3",
         "name": "Nike Club",
         "price": "$34.99",
-        "image": "https://nikearprod.vtexassets.com/arquivos/ids/620503-1400-1400?v=1772073586&width=1400&height=1400&aspect=true"
+        "image": "https://nikearprod.vtexassets.com/arquivos/ids/630422-1400-1400?v=1773177749&width=1400&height=1400&aspect=true"
       },
       {
         "id": "4",
@@ -26,9 +26,9 @@
       },
       {
         "id": "5",
-        "name": "Jordan Essentials",
+        "name": "Campera con capucha Tech",
         "price": "$69.99",
-        "image": "https://nikearprod.vtexassets.com/arquivos/ids/532758-1400-1400?v=1772126739&width=1400&height=1400&aspect=true"
+        "image": "https://nikearprod.vtexassets.com/arquivos/ids/597106-1400-1400?v=1773168019&width=1400&height=1400&aspect=true"
       }
     ]
   }
