@@ -204,11 +204,47 @@ body {
 }
 
 
+/* TABLA DE PRODUCTOS */
+.btnUpdate {
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 0.9rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    background-color: #1da1f2; /* Reemplaza #color-update con el color deseado para el botón "Update" */
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btnDelete {
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    background-color: #ef233c; /* Reemplaza #color-delete con el color deseado para el botón "Delete" */
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btnUpdate:hover,
+  .btnDelete:hover {
+    opacity: 0.8;
+  }
+  
+
 /* CREAR PRODUCTOS   */
-.containerForm{
+.containerForm {
     width: 50vw;
     margin: 10rem auto;
 }
+
 .btn-AddProduct {
     display: block;
     width: 200px;
@@ -229,7 +265,8 @@ body {
     position: relative;
     z-index: 2;
 }
-.btn-AddProduct:after{
+
+.btn-AddProduct:after {
     position: absolute;
     content: "";
     top: 0;
@@ -238,15 +275,15 @@ body {
     height: 100%;
     background: #ff6e61;
     transition: all .35s;
-  }
-  
-  .btn-AddProduct:hover{
+}
+
+.btn-AddProduct:hover {
     color: #fff;
-  }
-  
-  .btn-AddProduct:hover:after{
+}
+
+.btn-AddProduct:hover:after {
     width: 100%;
-  }
+}
 
 
 
