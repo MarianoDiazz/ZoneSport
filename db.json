@@ -1,35 +1,62 @@
 {
-    "products": [
-      {
-        "id": "1",
-        "name": "Nike Pr",
-        "price": "$49.99",
-        "image": "https://nikearprod.vtexassets.com/arquivos/ids/531573-1400-1400?v=1773181656&width=1400&height=1400&aspect=true"
-      },
-      {
-        "id": "2",
-        "name": "Musculosa Jordan",
-        "price": "$45.99",
-        "image": "https://nikearprod.vtexassets.com/arquivos/ids/657747-1400-1400?v=1773156102&width=1400&height=1400&aspect=true"
-      },
-      {
-        "id": "3",
-        "name": "Nike Club",
-        "price": "$34.99",
-        "image": "https://nikearprod.vtexassets.com/arquivos/ids/630422-1400-1400?v=1773177749&width=1400&height=1400&aspect=true"
-      },
-      {
-        "id": "4",
-        "name": "Nike Zoom Mercurial",
-        "price": "$49.99",
-        "image": "https://nikearprod.vtexassets.com/arquivos/ids/530025-1400-1400?v=1772145457&width=1400&height=1400&aspect=true"
-      },
-      {
-        "id": "5",
-        "name": "Campera con capucha Tech",
-        "price": "$69.99",
-        "image": "https://nikearprod.vtexassets.com/arquivos/ids/597106-1400-1400?v=1773168019&width=1400&height=1400&aspect=true"
-      }
-    ]
-  }
-  
+  "products": [
+    {
+      "id": "1",
+      "name": "Nike Pr",
+      "price": "49.99",
+      "image": "https://nikearprod.vtexassets.com/arquivos/ids/531573-1400-1400?v=1773181656&width=1400&height=1400&aspect=true"
+    },
+    {
+      "id": "2",
+      "name": "Musculosa Jordan",
+      "price": "45.99",
+      "image": "https://nikearprod.vtexassets.com/arquivos/ids/657747-1400-1400?v=1773156102&width=1400&height=1400&aspect=true"
+    },
+    {
+      "id": "3",
+      "name": "Nike Club",
+      "price": "34.99",
+      "image": "https://nikearprod.vtexassets.com/arquivos/ids/630422-1400-1400?v=1773177749&width=1400&height=1400&aspect=true"
+    },
+    {
+      "id": "4",
+      "name": "Nike Zoom Mercurial",
+      "price": "49.99",
+      "image": "https://nikearprod.vtexassets.com/arquivos/ids/530025-1400-1400?v=1772145457&width=1400&height=1400&aspect=true"
+    },
+    {
+      "id": "5",
+      "name": "Campera con capucha Tech",
+      "price": "69.99",
+      "image": "https://nikearprod.vtexassets.com/arquivos/ids/597106-1400-1400?v=1773168019&width=1400&height=1400&aspect=true"
+    },
+    {
+      "name": "Mariano Diaz",
+      "price": "55",
+      "category": "indumentaria",
+      "image": "https://nikearprod.vtexassets.com/arquivos/ids/531765-1400-1400?v=1774203481&width=1400&height=1400&aspect=true",
+      "id": "T_82DAS"
+    },
+    {
+      "name": "Musculosa LeBron",
+      "price": "16",
+      "category": "indumentaria",
+      "image": "https://nikearprod.vtexassets.com/arquivos/ids/600641-1400-1400?v=1774203474&width=1400&height=1400&aspect=true",
+      "id": "I2WCuSW"
+    },
+    {
+      "name": "Air Force Supra",
+      "price": "36",
+      "category": "calzado",
+      "image": "https://nikearprod.vtexassets.com/arquivos/ids/698519-600-600?v=638229588985000000&width=600&height=600&aspect=true",
+      "id": "Ah7jXEk"
+    },
+    {
+      "name": "Gorro Puma Black",
+      "price": "12",
+      "category": "accesorio",
+      "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_480,h_480/global/024038/01/fnd/ARG/fmt/png",
+      "id": "wDb97Bp"
+    }
+  ]
+}

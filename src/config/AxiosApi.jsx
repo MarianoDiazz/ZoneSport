@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-    baseURL: window.API_URL
+    baseURL: import.meta.env.VITE_REACT_APP_API_ZONESPORT
 })
 
 export default instance
