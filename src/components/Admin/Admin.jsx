@@ -27,15 +27,16 @@ const Admin = ({ products, getApi, URL }) => {
             <tr>
               <th>Nombre</th>
               <th>Precio</th>
-              <th>URL de la imagen</th>
+              {/* <th>URL de la imagen</th> */}
               <th>Categoría</th>
-              <th className="product-description">Descripción</th>
+              {/* <th className="product-description">Descripción</th> */}
               <th>Acciones</th>
             </tr>
           </thead>
           <tbody>
             {products?.map((product) => (
-              <Product key={product.id}
+              <Product
+                key={product.id}
                 product={product}
                 URL={URL}
                 getApi={getApi} />

@@ -2,14 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Product = ({ product, getApi, URL }) => {
+
+
+    const handleDelete = (id) => {
+
+    }
+
     return (
         <tr>
-            <td>{product.id}</td>
+            {/* <td>{product.id}</td> */}
             <td>{product.name}</td>
-            <td>{product.price}</td>
-            <td>
-                <p> {product.image}</p>
-            </td>
+            <td>$ {product.price}</td>
+
             <td> {product.category}</td>
             <td className='w-25'>
                 <div className='d-flex justify-content-center'>

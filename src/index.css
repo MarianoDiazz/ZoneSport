@@ -77,6 +77,22 @@ body {
     color: #888;
 }
 
+.newSpan {
+    text-align: center;
+    background-color: #F86F03;
+    padding: 2px;
+    border-radius: 5px;
+    position: absolute;
+    right: 1em;
+    color: #FFF;
+}
+
+.productPrice {
+    font-size: 1.4em;
+    color: #171a10;
+    font-weight: 600;
+}
+
 /* FLECHITA DE CAROUSEL */
 
 .slick-slider button::before {
@@ -186,6 +202,52 @@ body {
     letter-spacing: 2px;
     font-family: 'Supreme', sans-serif;
 }
+
+
+/* CREAR PRODUCTOS   */
+.containerForm{
+    width: 50vw;
+    margin: 10rem auto;
+}
+.btn-AddProduct {
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+.btn-AddProduct span {
+    position: relative;
+    z-index: 2;
+}
+.btn-AddProduct:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff6e61;
+    transition: all .35s;
+  }
+  
+  .btn-AddProduct:hover{
+    color: #fff;
+  }
+  
+  .btn-AddProduct:hover:after{
+    width: 100%;
+  }
+
 
 
 /* FOOTER */

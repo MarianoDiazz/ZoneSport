@@ -14,7 +14,7 @@ function App() {
 
   //  variable de entorno
   // por problemas la defini en index.html
-  const URL = window.API_URL;
+  const URL = import.meta.env.VITE_REACT_APP_API_ZONESPORT;
   console.log(URL)
 
 
@@ -46,7 +46,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Home products={products} />} />
             <Route path="/Admin" element={<Admin products={products} URL={URL} getApi={getApi} />} />
-            <Route path="/Admin/create" element={<ProductCreate />} />          </Routes>
+            <Route path="/Admin/create" element={<ProductCreate URL={URL} getApi={getApi} />} />          </Routes>
         </main>
       </div>
       <Footer />

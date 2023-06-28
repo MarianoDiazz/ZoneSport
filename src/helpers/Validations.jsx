@@ -1,8 +1,8 @@
 // expr regulares
-const expRegName = /^ [a - zA - Z0 - 9\s\-_,] + $/
-const expRegPrice = /^[0-9]+(?:\.[0-9]{1,2})?$/
+const expRegName = /^[A-Za-z\s?]+$/;
+const expRegPrice = /[0-9]+$/;
 const expRegCategory = /^[a-zA-Z0-9\s]+$/
-const expRegURL = /^(http|https):\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}(\/\S*)?$/
+const expRegURL = /^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$/;
 
 // funciones para validar
 
@@ -17,14 +17,21 @@ export const validarNombre = (field) => {
 export const validarPrecio = (field) => {
     const precio = parseFloat(field.trim());
     if (
-        expRegPrice.test(field) &&
-        !isNaN(precio) &&
-        precio > 0 &&
-        precio < 150000
+      expRegPrice.test(field) &&
+      !isNaN(precio) &&
+      precio > 0 &&
+      precio < 150000
     ) {
-        return true;
+      return true;
     } else {
-        return false;
+      return false;
+    }
+  }
+  export const validarURL = (field) => {
+    if (expRegURL.test(field) && field.trim() !== "") {
+        return true
+    } else {
+        return false
     }
 }
 
