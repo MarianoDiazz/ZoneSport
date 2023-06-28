@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "name": "Nike Pr",
+      "price": "49.99",
+      "image": "https://nikearprod.vtexassets.com/arquivos/ids/531573-1400-1400?v=1773181656&width=1400&height=1400&aspect=true",
+      "category": "calzado",
+      "id": "1"
+    },
+    {
+      "name": "Nike Club",
+      "price": "34.99",
+      "image": "https://nikearprod.vtexassets.com/arquivos/ids/630422-1400-1400?v=1773177749&width=1400&height=1400&aspect=true",
+      "category": "calzado",
+      "id": "3"
+    },
+    {
+      "name": "Nike Zoom Mercurial",
+      "price": "49.99",
+      "image": "https://nikearprod.vtexassets.com/arquivos/ids/530025-1400-1400?v=1772145457&width=1400&height=1400&aspect=true",
+      "category": "calzado",
+      "id": "4"
+    }
+  ]
+}
