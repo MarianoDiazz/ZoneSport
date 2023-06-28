@@ -8,6 +8,7 @@ import ProductCreate from './components/Admin/ProductCreate';
 import Footer from './components/Footer';
 import ProductDetail from './components/ProductDetail';
 import axios from './config/AxiosApi';
+import EditProduct from './components/Admin/EditProduct';
 
 function App() {
   const [products, setProducts] = useState([])
@@ -15,7 +16,7 @@ function App() {
   //  variable de entorno
   // por problemas la defini en index.html
   const URL = import.meta.env.VITE_REACT_APP_API_ZONESPORT;
-  console.log(URL)
+  // console.log(URL)
 
 
   useEffect(() => {
@@ -46,7 +47,9 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Home products={products} />} />
             <Route path="/Admin" element={<Admin products={products} URL={URL} getApi={getApi} />} />
-            <Route path="/Admin/create" element={<ProductCreate URL={URL} getApi={getApi} />} />          </Routes>
+            <Route path="/Admin/create" element={<ProductCreate URL={URL} getApi={getApi} />} />
+            <Route path="/Admin/edit/:id" element={<EditProduct URL={URL} getApi= {getApi} />} />
+          </Routes>
         </main>
       </div>
       <Footer />

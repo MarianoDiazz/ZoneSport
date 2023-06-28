@@ -47,10 +47,12 @@ const Product = ({ product, getApi, URL }) => {
       <td>{category}</td>
       <td className='w-25'>
         <div className='d-flex justify-content-center'>
-          <Link to={`/admin/edit/${id}`} className='btn-edit'>
-            Update
+          <Link to={`/admin/edit/${id}`} >
+            <button className='btnUpdate'>
+              Update
+            </button>
           </Link>
-          <button className='btn-btn-red' onClick={() => handleDelete(id)}>
+          <button className='btnDelete' onClick={() => handleDelete(id)}>
             Delete
           </button>
         </div>
