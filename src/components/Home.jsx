@@ -3,7 +3,7 @@ import CarouselHome from './CarouselHome';
 import BestSeller from './BestSeller';
 import Marcas from './Marcas';
 import Generos from './Generos';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 import CardProduct from './CardProduct';
 
 const Home = ({ products }) => {
@@ -15,6 +15,7 @@ const Home = ({ products }) => {
             <h1>Productos</h1>
             <hr />
             {products?.length !== 0 ?
+            <Container>
                 <Row>
                     {products?.map((product) => (
                         <Col xl={3} lg={4} md={6} className='my-2'>
@@ -22,6 +23,7 @@ const Home = ({ products }) => {
                         </Col>
                     ))}
                 </Row>
+                </Container>
                 :
                 <div>
                     <h2>No se encontro nada</h2>
