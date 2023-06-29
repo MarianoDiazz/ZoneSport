@@ -121,15 +121,20 @@ body {
 .marcas-icon {
     width: 90% !important;
     height: 10vh;
-    margin: 0 10px;
+    margin: 18px 15px;
     border-radius: 50%;
-    filter: drop-shadow(8px 12px 12px #696262);
+    filter: drop-shadow(8px 2px 12px #696262);
 }
+
 
 .marcas-icon:hover {
     transform: scale(1.1);
     transition: all 0.3s ease;
 }
+.marcas-icon:focus {
+    outline: none;
+  }
+  
 
 /* GENEROS */
 /* .container-gen {

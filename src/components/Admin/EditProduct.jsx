@@ -108,7 +108,7 @@ const EditProduct = ({ URL, getApi }) => {
                         <Form.Control
                             type="text"
                             name="name"
-                            value={product.name}
+                            // value={product.name}
                             defaultValue={product.name}
                             // Aqui se guarda el valor actual del input
                             ref={nameRef}
