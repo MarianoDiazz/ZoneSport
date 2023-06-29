@@ -7,7 +7,7 @@ import Navigation from './components/Navigation';
 import ProductCreate from './components/Admin/ProductCreate';
 import Footer from './components/Footer';
 import ProductDetail from './components/ProductDetail';
-import axios from './config/AxiosApi';
+// import axios from './config/AxiosApi';
 import EditProduct from './components/Admin/EditProduct';
 
 function App() {
@@ -49,6 +49,7 @@ function App() {
             <Route path="/Admin" element={<Admin products={products} URL={URL} getApi={getApi} />} />
             <Route path="/Admin/create" element={<ProductCreate URL={URL} getApi={getApi} />} />
             <Route path="/Admin/edit/:id" element={<EditProduct URL={URL} getApi= {getApi} />} />
+            <Route path="/Admin/buy/:id" element={<ProductDetail URL={URL} />} />
           </Routes>
         </main>
       </div>

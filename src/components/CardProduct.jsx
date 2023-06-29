@@ -1,27 +1,24 @@
 import React from 'react';
-import { Card, CardImg } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const CardProduct = ({ product }) => {
     return (
         <div>
-            <Link to="/product/buy" className='text-decoration-none'>
-                <Card>
-                    <CardImg className='img-fluid' variant='top' src={product.image} />
+            <Link to={`/Admin/buy/${product.id}`} className='text-decoration-none'>
+                <Card className="product-card">
+                    <Card.Img variant="top" src={product.image} className="product-img" />
                     <Card.Body>
-                        <div className='d-flex align-items-center'>
-                            <Card.Title>
-                                {product.name}
-                            </Card.Title>
-                            <span className='newSpan'>New</span>
+                        <div className="product-header">
+                            <Card.Title className="product-title">{product.name}</Card.Title>
+                            <span className="new-badge">New</span>
                         </div>
-
-                        <Card.Text>
-                           {/* { product.category} */}
-                        </Card.Text>
-                        <div>
-                            <p className='productPrice'> $ {product.price}</p>
-
+                        <Card.Text className="product-category">{/* product.category */}</Card.Text>
+                        <div className="product-footer">
+                            <p className="product-price">${product.price}</p>
+                            <Link to={`/Admin/buy/${product.id}`} className="text-decoration-none">
+                                <Button variant="primary" className="buy-button">Buy Now</Button>
+                            </Link>
 
                         </div>
                     </Card.Body>
