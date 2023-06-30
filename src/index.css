@@ -81,6 +81,24 @@ body {
 }
 
 
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.carousel-description {
+    color: #fff;
+    font-size: 18px;
+}
+
+
 /* Estilos para el contenedor del carrusel */
 
 
@@ -493,7 +511,20 @@ body {
     animation: fadeIn 1s;
 }
 
+/* SLIDER MARCAS */
+.container-marcas h1 {
+    /* font-size: 3rem; */
+    font-family: 'Recia', serif;
+    font-size: 4rem;
+    margin-top: 3rem;
+}
 
+.marcas-slider {
+    /* background-color: #888; */
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
 
 /* BUY PRODUCTS */
 .product-detail {
