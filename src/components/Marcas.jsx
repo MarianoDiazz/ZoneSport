@@ -1,32 +1,34 @@
 import React from "react";
 import Slider from 'react-slick';
-// import 'slick-carousel/slick/slick.css';
-// import 'slick-carousel/slick/slick-theme.css';
 import { SiAdidas, SiFila, SiNewbalance, SiNike, SiPuma, SiReebok, SiUnderarmour } from "react-icons/si";
-const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4,
-            },
-        },
-        {
-            breakpoint: 576,
-            settings: {
-                slidesToShow: 3,
-            },
-        },
-    ],
-};
-
 
 const Marcas = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+    ],
+  };
+
+
     return (
         <div className="container-marcas">
             <h1 className="py-3 text-center">Nuestras Marcas</h1>
