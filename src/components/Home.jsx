@@ -29,7 +29,7 @@ const Home = ({ products }) => {
                     <h2>No se encontro nada</h2>
                 </div >
             }
-            <Generos />
+            {/* <Generos /> */}
         </div>
     );
 };

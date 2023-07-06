@@ -17,7 +17,7 @@ const CardProduct = ({ product }) => {
                         <div className="product-footer">
                             <p className="product-price">${product.price}</p>
                             <Link to={`/Admin/buy/${product.id}`} className="text-decoration-none">
-                                <Button variant="primary" className="buy-button">Buy Now</Button>
+                                <Button className="buy-button">Buy Now</Button>
                             </Link>
 
                         </div>

@@ -15,7 +15,10 @@ const ProductCreate = ({ URL, getApi }) => {
     name: '',
     price: 0,
     image: '',
-    category: ''
+    category: '',
+    description: '',
+    stock: 0,
+    sizes: []
   });
 
   const navigate = useNavigate();
@@ -28,7 +31,8 @@ const ProductCreate = ({ URL, getApi }) => {
       !validarNombre(product.name) ||
       !validarCategoria(product.category) ||
       !validarPrecio(product.price) ||
-      !validarURL(product.image)
+      !validarURL(product.image) ||
+      (product.sizes.length === 0 || product.sizes.includes(''))
     ) {
       Swal.fire('Error!', 'Los campos son inválidos', 'error');
       return;
@@ -57,6 +61,7 @@ const ProductCreate = ({ URL, getApi }) => {
             Swal.fire('Creado', 'Producto creado', 'success');
             getApi();
             navigate('/Admin');
+            setProduct((prevProduct) => ({ ...prevProduct, sizes: [] }));
             e.target.reset();
           }
         } catch (error) {
@@ -68,7 +73,13 @@ const ProductCreate = ({ URL, getApi }) => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setProduct((prevProduct) => ({ ...prevProduct, [name]: value }));
+
+    if (name === 'sizes') {
+      const sizes = value.split(',').map((size) => size.trim());
+      setProduct((prevProduct) => ({ ...prevProduct, sizes }));
+    } else {
+      setProduct((prevProduct) => ({ ...prevProduct, [name]: value }));
+    }
   };
 
   return (
@@ -91,6 +102,17 @@ const ProductCreate = ({ URL, getApi }) => {
             type="number"
             name="price"
             value={product.price}
+            onChange={handleInputChange}
+          />
+        </Form.Group>
+
+        <Form.Group controlId="description">
+          <Form.Label>Descripción</Form.Label>
+          <Form.Control
+            as="textarea"
+            rows={3}
+            name="description"
+            value={product.description}
             onChange={handleInputChange}
           />
         </Form.Group>
@@ -120,9 +142,29 @@ const ProductCreate = ({ URL, getApi }) => {
           </Form.Control>
         </Form.Group>
 
-        <button type="submit" className="btn-AddProduct my-4">
+        <Form.Group controlId="stock">
+          <Form.Label>Stock</Form.Label>
+          <Form.Control
+            type="number"
+            name="stock"
+            value={product.stock}
+            onChange={handleInputChange}
+          />
+        </Form.Group>
+
+        <Form.Group controlId="sizes">
+          <Form.Label>Talles (separados por comas)</Form.Label>
+          <Form.Control
+            type="text"
+            name="sizes"
+            value={product.sizes.join(', ')}
+            onChange={handleInputChange}
+          />
+        </Form.Group>
+
+        <Button type="submit" className="btn-AddProduct my-4">
           <span>Agregar producto</span>
-        </button>
+        </Button>
       </Form>
     </Container>
   );

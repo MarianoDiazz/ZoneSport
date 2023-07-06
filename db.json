@@ -27,6 +27,61 @@
       "image": "https://filaar.vtexassets.com/arquivos/ids/6845354-500-auto?v=638211405721270000&width=500&height=auto&aspect=true",
       "category": "calzado",
       "id": "3R2s9w_"
+    },
+    {
+      "name": "Converse Botas",
+      "price": "50",
+      "image": "https://i.pinimg.com/564x/2a/e7/45/2ae745913e4241f77bc9b95762223bc4.jpg",
+      "category": "calzado",
+      "description": "Converse: Estilo, actitud y rebeldía en unas botas. ¡Marca tendencia y destaca con tu personalidad única!",
+      "stock": "11",
+      "sizes": [
+        "38",
+        "39",
+        "40",
+        "41"
+      ],
+      "id": "DYOPeRo"
+    },
+    {
+      "name": "Adidas Quorum",
+      "price": "46",
+      "image": "https://i.pinimg.com/564x/04/09/cb/0409cb95ab4180813d327d946ccad08e.jpg",
+      "category": "calzado",
+      "description": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "stock": "10",
+      "size": "40, 41",
+      "id": "7F9AMiZ"
+    },
+    {
+      "name": "New Balance ",
+      "price": "38.99",
+      "image": "https://i.pinimg.com/564x/c1/f7/23/c1f7238c58f845a195f4ea4d59418981.jpg",
+      "category": "calzado",
+      "description": "Zapas New balance pa, vofi",
+      "stock": "12",
+      "sizes": [
+        "38",
+        "39",
+        "40",
+        "41"
+      ],
+      "id": "bd_X55g"
+    },
+    {
+      "name": "New Balance xp",
+      "price": "45",
+      "image": "https://i.pinimg.com/564x/c9/0e/11/c90e11574fd8c531615ac868715ee117.jpg",
+      "category": "calzado",
+      "description": "LasNew Balance se destacan por su excelente amortiguación y soporte, lo que las convierte en una opción popular tanto para deportistas como para uso diario. Utilizan tecnologías innovadoras en la fabricación de sus suelas y entresuelas para brindar una experiencia de caminata o carrera cómoda y estable.",
+      "stock": "45",
+      "sizes": [
+        "38",
+        "39",
+        "40",
+        "41"
+      ],
+      "id": "NddDYkB"
     }
   ]
 }
